@@ -1,0 +1,13 @@
+<repo tag='all'>
+  <high>
+    <item name='test-name' issues='999'>
+      <description>Test description</description>
+      <path>tootsuite/mastodon</path>
+      <url>https://github.com/tootsuite/mastodon</url>
+    </item>
+  </high>
+  <medium>
+  </medium>
+  <low>
+  </low>
+</repo>
