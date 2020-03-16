@@ -1,0 +1,256 @@
+<high>
+  <item name='mastodon' issues='893'>
+    <description>Your self-hosted, globally interconnected microblogging community</description>
+    <path>tootsuite/mastodon</path>
+    <url>https://github.com/tootsuite/mastodon</url>
+  </item>
+</high>
+<medium>
+  <item name='rails' issues='507'>
+    <description>Ruby on Rails</description>
+    <path>rails/rails</path>
+    <url>https://github.com/rails/rails</url>
+  </item>
+  <item name='dev.to' issues='503'>
+    <description>Where programmers share ideas and help each other grow</description>
+    <path>thepracticaldev/dev.to</path>
+    <url>https://github.com/thepracticaldev/dev.to</url>
+  </item>
+  <item name='metasploit-framework' issues='495'>
+    <description>Metasploit Framework</description>
+    <path>rapid7/metasploit-framework</path>
+    <url>https://github.com/rapid7/metasploit-framework</url>
+  </item>
+  <item name='open-build-service' issues='466'>
+    <description>A generic system to build and distribute packages from sources in an automatic, consistent and reproducible way. Release your software for a wide range of operating systems and hardware architectures.</description>
+    <path>opensuse/open-build-service</path>
+    <url>https://github.com/opensuse/open-build-service</url>
+  </item>
+  <item name='jruby' issues='456'>
+    <description>JRuby, an implementation of Ruby on the JVM</description>
+    <path>jruby/jruby</path>
+    <url>https://github.com/jruby/jruby</url>
+  </item>
+  <item name='huginn' issues='365'>
+    <description>Create agents that monitor and act on your behalf. Your agents are standing by!</description>
+    <path>cantino/huginn</path>
+    <url>https://github.com/cantino/huginn</url>
+  </item>
+  <item name='huginn' issues='365'>
+    <description>Create agents that monitor and act on your behalf. Your agents are standing by!</description>
+    <path>huginn/huginn</path>
+    <url>https://github.com/huginn/huginn</url>
+  </item>
+  <item name='openfoodnetwork' issues='364'>
+    <description>Connect suppliers, distributors and consumers for the sale and purchase of local produce</description>
+    <path>openfoodfoundation/openfoodnetwork</path>
+    <url>https://github.com/openfoodfoundation/openfoodnetwork</url>
+  </item>
+  <item name='diaspora' issues='363'>
+    <description>A privacy-aware, distributed, open source social network.</description>
+    <path>diaspora/diaspora</path>
+    <url>https://github.com/diaspora/diaspora</url>
+  </item>
+  <item name='vagrant' issues='361'>
+    <description>Vagrant is a tool for building and distributing development environments.</description>
+    <path>mitchellh/vagrant</path>
+    <url>https://github.com/mitchellh/vagrant</url>
+  </item>
+  <item name='vagrant' issues='361'>
+    <description>Vagrant is a tool for building and distributing development environments.</description>
+    <path>hashicorp/vagrant</path>
+    <url>https://github.com/hashicorp/vagrant</url>
+  </item>
+  <item name='openstreetmap-website' issues='346'>
+    <description>The rails application powering http://www.openstreetmap.org/</description>
+    <path>openstreetmap/openstreetmap-website</path>
+    <url>https://github.com/openstreetmap/openstreetmap-website</url>
+  </item>
+  <item name='chef' issues='297'>
+    <description>A systems integration framework, built to bring the benefits of configuration management to your entire infrastructure.</description>
+    <path>opscode/chef</path>
+    <url>https://github.com/opscode/chef</url>
+  </item>
+  <item name='chef' issues='297'>
+    <description>A systems integration framework, built to bring the benefits of configuration management to your entire infrastructure.</description>
+    <path>chef/chef</path>
+    <url>https://github.com/chef/chef</url>
+  </item>
+  <item name='exercism.io' issues='291'>
+    <description>Quickly ramp up in new programming languages.</description>
+    <path>exercism/exercism.io</path>
+    <url>https://github.com/exercism/exercism.io</url>
+  </item>
+  <item name='exercism.io' issues='291'>
+    <description>Quickly ramp up in new programming languages.</description>
+    <path>kytrinyx/exercism.io</path>
+    <url>https://github.com/kytrinyx/exercism.io</url>
+  </item>
+  <item name='rubygems' issues='282'>
+    <description>Library packaging and distribution for Ruby.</description>
+    <path>rubygems/rubygems</path>
+    <url>https://github.com/rubygems/rubygems</url>
+  </item>
+  <item name='sonic-pi' issues='271'>
+    <description>The Live Coding Music Synth for Everyone</description>
+    <path>samaaron/sonic-pi</path>
+    <url>https://github.com/samaaron/sonic-pi</url>
+  </item>
+  <item name='webpacker' issues='258'>
+    <description>Use Webpack to manage app-like JavaScript modules in Rails</description>
+    <path>rails/webpacker</path>
+    <url>https://github.com/rails/webpacker</url>
+  </item>
+  <item name='active_admin' issues='246'>
+    <description>The administration framework for Ruby on Rails applications.</description>
+    <path>gregbell/active_admin</path>
+    <url>https://github.com/gregbell/active_admin</url>
+  </item>
+  <item name='activeadmin' issues='246'>
+    <description>The administration framework for Ruby on Rails applications.</description>
+    <path>activeadmin/activeadmin</path>
+    <url>https://github.com/activeadmin/activeadmin</url>
+  </item>
+  <item name='wikiedudashboard' issues='240'>
+    <description>Wiki Education Foundation's Wikipedia course dashboard system</description>
+    <path>wikieducationfoundation/wikiedudashboard</path>
+    <url>https://github.com/wikieducationfoundation/wikiedudashboard</url>
+  </item>
+  <item name='rails_admin' issues='239'>
+    <description>RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data</description>
+    <path>sferik/rails_admin</path>
+    <url>https://github.com/sferik/rails_admin</url>
+  </item>
+  <item name='cancan' issues='220'>
+    <description>Authorization Gem for Ruby on Rails.</description>
+    <path>ryanb/cancan</path>
+    <url>https://github.com/ryanb/cancan</url>
+  </item>
+  <item name='ekylibre' issues='210'>
+    <description>Connecting farms to the world</description>
+    <path>ekylibre/ekylibre</path>
+    <url>https://github.com/ekylibre/ekylibre</url>
+  </item>
+  <item name='osem' issues='208'>
+    <description>Open Source Event Manager. An event management tool tailored to Free and Open Source Software conferences.</description>
+    <path>opensuse/osem</path>
+    <url>https://github.com/opensuse/osem</url>
+  </item>
+  <item name='wicked_pdf' issues='207'>
+    <description>PDF generator (from HTML) plugin for Ruby on Rails</description>
+    <path>mileszs/wicked_pdf</path>
+    <url>https://github.com/mileszs/wicked_pdf</url>
+  </item>
+  <item name='octopress' issues='204'>
+    <description>Octopress is an obsessively designed framework for Jekyll blogging. It’s easy to configure and easy to deploy. Sweet huh?</description>
+    <path>imathis/octopress</path>
+    <url>https://github.com/imathis/octopress</url>
+  </item>
+  <item name='acts-as-taggable-on' issues='204'>
+    <description>A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts.</description>
+    <path>mbleigh/acts-as-taggable-on</path>
+    <url>https://github.com/mbleigh/acts-as-taggable-on</url>
+  </item>
+  <item name='fastlane' issues='200'>
+    <description>🚀 The easiest way to automate building and releasing your iOS and Android apps</description>
+    <path>fastlane/fastlane</path>
+    <url>https://github.com/fastlane/fastlane</url>
+  </item>
+</medium>
+<low>
+  <item name='consul' issues='195'>
+    <description>Consul - Open Government and E-Participation Web Software</description>
+    <path>consul/consul</path>
+    <url>https://github.com/consul/consul</url>
+  </item>
+  <item name='cocoapods' issues='192'>
+    <description>The Cocoa Dependency Manager.</description>
+    <path>cocoapods/cocoapods</path>
+    <url>https://github.com/cocoapods/cocoapods</url>
+  </item>
+  <item name='solidus' issues='191'>
+    <description>Solidus, Rails eCommerce System</description>
+    <path>solidusio/solidus</path>
+    <url>https://github.com/solidusio/solidus</url>
+  </item>
+  <item name='classroom' issues='188'>
+    <description>GitHub Classroom automates repository creation and access control, making it easy for teachers to distribute starter code and collect assignments on GitHub.</description>
+    <path>education/classroom</path>
+    <url>https://github.com/education/classroom</url>
+  </item>
+  <item name='grape' issues='186'>
+    <description>An opinionated framework for creating REST-like APIs in Ruby.</description>
+    <path>intridea/grape</path>
+    <url>https://github.com/intridea/grape</url>
+  </item>
+  <item name='grape' issues='186'>
+    <description>An opinionated framework for creating REST-like APIs in Ruby.</description>
+    <path>ruby-grape/grape</path>
+    <url>https://github.com/ruby-grape/grape</url>
+  </item>
+  <item name='neo4j' issues='184'>
+    <description>An active model wrapper for the Neo4j Graph Database for Ruby.</description>
+    <path>neo4jrb/neo4j</path>
+    <url>https://github.com/neo4jrb/neo4j</url>
+  </item>
+  <item name='rubocop' issues='183'>
+    <description>A Ruby static code analyzer, based on the community Ruby style guide.</description>
+    <path>bbatsov/rubocop</path>
+    <url>https://github.com/bbatsov/rubocop</url>
+  </item>
+  <item name='rubocop' issues='183'>
+    <description>A Ruby static code analyzer and formatter, based on the community Ruby style guide.</description>
+    <path>rubocop-hq/rubocop</path>
+    <url>https://github.com/rubocop-hq/rubocop</url>
+  </item>
+  <item name='manageiq' issues='163'>
+    <description>ManageIQ Open-Source Management Platform</description>
+    <path>manageiq/manageiq</path>
+    <url>https://github.com/manageiq/manageiq</url>
+  </item>
+  <item name='active_model_serializers' issues='162'>
+    <description>ActiveModel::Serializer implementation and Rails hooks</description>
+    <path>rails-api/active_model_serializers</path>
+    <url>https://github.com/rails-api/active_model_serializers</url>
+  </item>
+  <item name='pry' issues='161'>
+    <description>An IRB alternative and runtime developer console</description>
+    <path>pry/pry</path>
+    <url>https://github.com/pry/pry</url>
+  </item>
+  <item name='delayed_job' issues='160'>
+    <description>Database based asynchronous priority queue system -- Extracted from Shopify </description>
+    <path>collectiveidea/delayed_job</path>
+    <url>https://github.com/collectiveidea/delayed_job</url>
+  </item>
+  <item name='manageiq-ui-classic' issues='160'>
+    <description>Classic UI of ManageIQ</description>
+    <path>manageiq/manageiq-ui-classic</path>
+    <url>https://github.com/manageiq/manageiq-ui-classic</url>
+  </item>
+  <item name='homebrew-core' issues='158'>
+    <description>🍻 Default formulae for the missing package manager for macOS</description>
+    <path>homebrew/homebrew-core</path>
+    <url>https://github.com/homebrew/homebrew-core</url>
+  </item>
+  <item name='jekyll' issues='152'>
+    <description>:globe_with_meridians: Jekyll is a blog-aware, static site generator in Ruby</description>
+    <path>jekyll/jekyll</path>
+    <url>https://github.com/jekyll/jekyll</url>
+  </item>
+  <item name='spree' issues='151'>
+    <description>Spree is a complete, modular & API-driven open source ecommerce solution for Ruby on Rails</description>
+    <path>spree/spree</path>
+    <url>https://github.com/spree/spree</url>
+  </item>
+  <item name='eventmachine' issues='149'>
+    <description>EventMachine: fast, simple event-processing library for Ruby programs</description>
+    <path>eventmachine/eventmachine</path>
+    <url>https://github.com/eventmachine/eventmachine</url>
+  </item>
+  <item name='svn2git' issues='142'>
+    <description>Ruby tool for importing existing svn projects into git.</description>
+    <path>nirvdrum/svn2git</path>
+    <url>https://github.com/nirvdrum/svn2git</url>
+  </item>
+</low>

@@ -1,9 +1,9 @@
-<repo tag='all'>
+<repo tag='none'>
   <high>
-    <item name='test-name' issues='999'>
+    <item name='name' issues='0'>
       <description>Test description</description>
-      <path>tootsuite/mastodon</path>
-      <url>https://github.com/tootsuite/mastodon</url>
+      <path>example/path</path>
+      <url>https://github.com/example/path</url>
     </item>
   </high>
   <medium>
