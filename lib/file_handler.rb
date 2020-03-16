@@ -14,6 +14,10 @@ class FileHandler
     @file = File.new(@file_path, access)
   end
 
+  def read
+    File.read(@file_path)
+  end
+
   class << self
     attr_reader :repo_dir
 

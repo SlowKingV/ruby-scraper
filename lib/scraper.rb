@@ -1,6 +1,6 @@
 class Scraper
   require 'nokogiri'
-  attr_reader :doc, :repo_dataset
+  attr_reader :doc, :dataset
 
   def initialize(ref)
     @ref = ref
@@ -8,7 +8,7 @@ class Scraper
   end
 
   def compare(data)
-    @repo_dataset == data
+    @dataset == data
   end
 
   private
@@ -44,8 +44,8 @@ class ScrapHTML < Scraper
   end
 
   def parse_nodes
-    @repo_dataset = []
-    @nodes.each { |node| @repo_dataset << to_data(node) }
+    @dataset = []
+    @nodes.each { |node| @dataset << to_data(node) }
   end
 
   def to_data(node)
@@ -61,8 +61,10 @@ class ScrapHTML < Scraper
 end
 
 class ScrapXML < Scraper
+  attr_reader :tag
   def initialize(ref)
     super(ref)
+    @tag = ''
     refresh unless @doc.content.empty?
   end
 
@@ -109,11 +111,12 @@ class ScrapXML < Scraper
 
   def fetch_nodes
     @nodes = @doc.css('item')
+    @tag = @doc.at_css('repo')['tag']
   end
 
   def parse_nodes
-    @repo_dataset = []
-    @nodes.each { |node| @repo_dataset << to_data(node) }
+    @dataset = []
+    @nodes.each { |node| @dataset << to_data(node) }
   end
 
   def to_data(node)

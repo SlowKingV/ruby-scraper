@@ -1,47 +1,94 @@
 #!/usr/bin/env ruby
 
 require 'json'
-require 'nokogiri'
+require './lib/connection_handler.rb'
+require './lib/file_handler.rb'
+require './lib/scraper.rb'
 
-print '
-| Open Source Contributions
-  - Active File: entry_test
+ScrapHTML.refresh_tags(Connection.new.file)
+config = JSON.parse(File.read('repo/config.json'))
+filename = config['selected']
+local = []
+remote = []
+local[0] = FileHandler.new(filename)
+local[1] = ScrapXML.new(local[0].file)
+remote[0] = Connection.new(local[1].tag)
+remote[1] = ScrapHTML.new(remote[0].file)
+input = -1
+
+until input.zero?
+  filename = config['selected']
+  print "
+  | Open Source Contributions
+    - Active File: #{filename}
 
 
-|1> Update Selected File
-|2> Inspect Selected File
-|3> Select a Different File
-|4> Create a New File
+  |1> Update Selected File
+  |2> Inspect Selected File
+  |3> Select a Different File
+  |4> Create a New File
 
-|0> Exit
+  |0> Exit
 
-Select an option: '
-input = gets.strip.to_i
+  Select an option: "
+  input = gets.strip.to_i
 
-case input
-when 1
-  puts 'Fetching data...'
-  puts 'File updated, do you want to inspect it now?(Y/N)'
-  gets.strip
-when 2
-  puts 'Reading <entry_test.xml>...'
-  puts '[Data]'
-  gets.strip
-when 3
-  puts '[Listed Files]'
-  print 'Select one of the previous files: '
-  gets.strip
-when 4
-  puts 'Enter the new file name: '
-  gets.strip
-  puts 'Enter one Tag to listen: '
-  gets.strip
-  puts 'Fetching data...'
-  puts 'File Generated. Select and view it now?(Y/N)'
-  gets.strip
-when 0
-  puts 'Terminating the program...'
-else
-  puts 'Enter a valid option'
-  puts 'Returning to Main Screen...'
+  case input
+  when 1
+    puts 'Fetching data...'
+    remote[0] = Connection.new(local[1].tag)
+    remote[1] = ScrapHTML.new(remote[0].file)
+    if !remote[1].compare(local[1].dataset)
+      puts 'Changes found! Updating File...'
+      local[0].file.rewind
+      local[0].file.puts("<repo tag='#{local[1].tag}'>\n#{ScrapXML.to_str(remote[1].dataset)}\n</repo>")
+      puts 'File Changed! (Press [Enter] to continue)'
+    else
+      puts 'File is already up-to-date (Press [Enter] to continue)'
+    end
+    gets
+  when 2
+    puts "Reading <#{filename}>..."
+    puts "\n#{local[0].read}"
+    puts "\n(Press [Enter] to continue)"
+    gets
+  when 3
+    files = FileHandler.list_files
+    files.each_with_index { |f, i| puts "#{i} = #{f}" }
+    print 'Select one of the previous files: '
+    input = gets.strip.to_i
+    puts 'Refreshing local data...'
+    local[0] = FileHandler.new(files[input].gsub(/\.\w+/, ''))
+    local[1] = ScrapXML.new(local[0].file)
+    puts 'Updating remote data...'
+    remote[0] = Connection.new(local[1].tag)
+    remote[1] = ScrapHTML.new(remote[0].file)
+    puts 'Updating config file...'
+    config['selected'] = files[input].gsub(/\.\w+/, '')
+    json = JSON.generate(config)
+    File.open('repo/config.json', 'w') do |file|
+      file.rewind
+      file.puts(json)
+    end
+    puts 'New file selected!(Press [Enter] to continue)'
+    gets
+  when 4
+    print 'Enter the new file name: '
+    name = gets.strip
+    print 'Enter one Tag to listen: '
+    tag = gets.strip
+    puts 'Fetching remote data...'
+    remote[0] = Connection.new(tag)
+    remote[1] = ScrapHTML.new(remote[0].file)
+    puts 'Creating local file...'
+    local[0] = FileHandler.new(name)
+    local[1] = ScrapXML.new(local[0].file)
+    puts 'File generated...(Press [Enter] to continue)'
+    gets
+  when 0
+    puts 'Terminating the program...'
+  else
+    puts 'Enter a valid option'
+    puts 'Returning to Main Screen...'
+  end
 end
