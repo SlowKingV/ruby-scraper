@@ -2,7 +2,7 @@
 
 > Capstone projects are solo projects at the end of the each of the Microverse Main Technical Curriculum sections.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./screenshot.png)
 
 ### Project Requirements
 
