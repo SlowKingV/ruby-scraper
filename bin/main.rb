@@ -56,15 +56,15 @@ until input.zero?
     files = FileHandler.list_files
     files.each_with_index { |f, i| puts "#{i} = #{f}" }
     print 'Select one of the previous files: '
-    input = gets.strip.to_i
+    opt = gets.strip.to_i
     puts 'Refreshing local data...'
-    local[0] = FileHandler.new(files[input].gsub(/\.\w+/, ''))
+    local[0] = FileHandler.new(files[opt].gsub(/\.\w+/, ''))
     local[1] = ScrapXML.new(local[0].file)
     puts 'Updating remote data...'
     remote[0] = Connection.new(local[1].tag)
     remote[1] = ScrapHTML.new(remote[0].file)
     puts 'Updating config file...'
-    config['selected'] = files[input].gsub(/\.\w+/, '')
+    config['selected'] = files[opt].gsub(/\.\w+/, '')
     json = JSON.generate(config)
     File.open('repo/config.json', 'w') do |file|
       file.rewind
