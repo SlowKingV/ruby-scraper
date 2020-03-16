@@ -1,6 +1,3 @@
-require_relative 'connection_handler.rb'
-require_relative 'file_handler.rb'
-
 class Scraper
   require 'nokogiri'
   attr_reader :doc, :repo_dataset
@@ -20,10 +17,20 @@ class Scraper
 end
 
 class ScrapHTML < Scraper
+  @tags = ['']
+
   def initialize(ref, num = 50)
     super(ref)
     @nodes = fetch_nodes(num)
     parse_nodes
+  end
+
+  class << self
+    attr_reader :tags
+    def refresh_tags(src)
+      doc = Nokogiri::HTML(src)
+      doc.css('ul.types-filter > li > a').each { |node| @tags << node['data-language'] }
+    end
   end
 
   private
