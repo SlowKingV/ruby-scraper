@@ -83,6 +83,8 @@ until input.zero?
     puts 'Creating local file...'
     local[0] = FileHandler.new(name)
     local[1] = ScrapXML.new(local[0].file)
+    local[0].file.rewind
+    local[0].file.puts("<repo tag='#{local[1].tag}'>\n#{ScrapXML.to_str(remote[1].dataset)}\n</repo>")
     puts 'File generated...(Press [Enter] to continue)'
     gets
   when 0
