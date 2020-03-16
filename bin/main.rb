@@ -71,20 +71,24 @@ until input.zero?
       file.puts(json)
     end
     puts 'New file selected!(Press [Enter] to continue)'
-    gets
+    getsfiles
   when 4
     print 'Enter the new file name: '
     name = gets.strip
-    print 'Enter one Tag to listen: '
-    tag = gets.strip
+    tags = ScrapHTML.tags
+    tags[0] = 'All'
+    tags.each_with_index { |f, i| puts "#{i} = #{f}" }
+    tags[0] = ''
+    print 'Enter the language to listen: '
+    tag = gets.strip.to_i
     puts 'Fetching remote data...'
-    remote[0] = Connection.new(tag)
+    remote[0] = Connection.new(tags[tag])
     remote[1] = ScrapHTML.new(remote[0].file)
     puts 'Creating local file...'
     local[0] = FileHandler.new(name)
     local[1] = ScrapXML.new(local[0].file)
     local[0].file.rewind
-    local[0].file.puts("<repo tag='#{local[1].tag}'>\n#{ScrapXML.to_str(remote[1].dataset)}\n</repo>")
+    local[0].file.puts("<repo tag='#{remote[1].tag}'>\n#{ScrapXML.to_str(remote[1].dataset)}\n</repo>")
     puts 'File generated...(Press [Enter] to continue)'
     gets
   when 0

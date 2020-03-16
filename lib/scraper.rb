@@ -1,6 +1,6 @@
 class Scraper
   require 'nokogiri'
-  attr_reader :doc, :dataset
+  attr_reader :doc, :dataset, :tag
 
   def initialize(ref)
     @ref = ref
@@ -21,7 +21,7 @@ class ScrapHTML < Scraper
 
   def initialize(ref, num = 50)
     super(ref)
-    @nodes = fetch_nodes(num)
+    fetch_nodes(num)
     parse_nodes
   end
 
@@ -41,6 +41,7 @@ class ScrapHTML < Scraper
 
   def fetch_nodes(num)
     @nodes = @doc.css('ul.repo-list > li.repo-item')[0..(num - 1)]
+    @tag = @doc.at_css('a.types-filter-button').content
   end
 
   def parse_nodes
@@ -61,7 +62,6 @@ class ScrapHTML < Scraper
 end
 
 class ScrapXML < Scraper
-  attr_reader :tag
   def initialize(ref)
     super(ref)
     @tag = ''
