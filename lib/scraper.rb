@@ -41,6 +41,7 @@ class ScrapHTML < Scraper
 
   def fetch_nodes(num)
     @nodes = @doc.css('ul.repo-list > li.repo-item')[0..(num - 1)]
+    @tag = @doc.css('a.types-filter-button')[0].content
   end
 
   def parse_nodes
