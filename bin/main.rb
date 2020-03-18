@@ -35,6 +35,7 @@ until input.zero?
 
   Select an option: "
   input = gets.strip.to_i
+  puts "\n___________________________________"
 
   case input
 
