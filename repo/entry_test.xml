@@ -1,0 +1,258 @@
+<repo tag=''>
+<high>
+  <item name='roslyn' issues='4080'>
+    <description>The .NET Compiler Platform ("Roslyn") provides open-source C# and Visual Basic compilers with rich code analysis APIs.</description>
+    <path>dotnet/roslyn</path>
+    <url>https://github.com/dotnet/roslyn</url>
+  </item>
+  <item name='flutter' issues='3848'>
+    <description>Flutter makes it easy and fast to build beautiful mobile apps.</description>
+    <path>flutter/flutter</path>
+    <url>https://github.com/flutter/flutter</url>
+  </item>
+  <item name='godot' issues='3641'>
+    <description>Godot Engine – Multi-platform 2D and 3D game engine</description>
+    <path>godotengine/godot</path>
+    <url>https://github.com/godotengine/godot</url>
+  </item>
+  <item name='kibana' issues='3637'>
+    <description>:bar_chart: Kibana analytics and search dashboard for Elasticsearch</description>
+    <path>elasticsearch/kibana</path>
+    <url>https://github.com/elasticsearch/kibana</url>
+  </item>
+  <item name='kibana' issues='3427'>
+    <description>:bar_chart: Kibana analytics and search dashboard for Elasticsearch</description>
+    <path>elastic/kibana</path>
+    <url>https://github.com/elastic/kibana</url>
+  </item>
+  <item name='go' issues='3360'>
+    <description>The Go programming language</description>
+    <path>golang/go</path>
+    <url>https://github.com/golang/go</url>
+  </item>
+  <item name='nixpkgs' issues='3106'>
+    <description>Nix Packages collection</description>
+    <path>nixos/nixpkgs</path>
+    <url>https://github.com/nixos/nixpkgs</url>
+  </item>
+  <item name='ansible' issues='3047'>
+    <description>Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid writing scripts or custom code to deploy and update your applications— automate in a language that approaches plain English, using SSH, w</description>
+    <path>ansible/ansible</path>
+    <url>https://github.com/ansible/ansible</url>
+  </item>
+  <item name='rust' issues='2622'>
+    <description>A safe, concurrent, practical language.</description>
+    <path>mozilla/rust</path>
+    <url>https://github.com/mozilla/rust</url>
+  </item>
+  <item name='rust' issues='2620'>
+    <description>A safe, concurrent, practical language.</description>
+    <path>rust-lang/rust</path>
+    <url>https://github.com/rust-lang/rust</url>
+  </item>
+  <item name='vscode' issues='2488'>
+    <description>Visual Studio Code</description>
+    <path>microsoft/vscode</path>
+    <url>https://github.com/microsoft/vscode</url>
+  </item>
+  <item name='awesome-elixir' issues='2487'>
+    <description>A curated list of amazingly awesome Elixir and Erlang libraries, resources and shiny things. Updates:</description>
+    <path>h4cc/awesome-elixir</path>
+    <url>https://github.com/h4cc/awesome-elixir</url>
+  </item>
+  <item name='first-contributions' issues='2478'>
+    <description>🚀 Yet another project to get beginners contributing to open source 🔰</description>
+    <path>roshanjossey/first-contributions</path>
+    <url>https://github.com/roshanjossey/first-contributions</url>
+  </item>
+  <item name='pytorch' issues='2478'>
+    <description>Tensors and Dynamic neural networks in Python with strong GPU acceleration</description>
+    <path>pytorch/pytorch</path>
+    <url>https://github.com/pytorch/pytorch</url>
+  </item>
+  <item name='first-contributions' issues='2478'>
+    <description>🚀✨ Help beginners to contribute to open source projects</description>
+    <path>firstcontributions/first-contributions</path>
+    <url>https://github.com/firstcontributions/first-contributions</url>
+  </item>
+  <item name='typescript' issues='2346'>
+    <description>TypeScript is a superset of JavaScript that compiles to clean JavaScript output.</description>
+    <path>microsoft/typescript</path>
+    <url>https://github.com/microsoft/typescript</url>
+  </item>
+  <item name='riot-web' issues='2286'>
+    <description>A glossy Matrix collaboration client for the web.</description>
+    <path>vector-im/riot-web</path>
+    <url>https://github.com/vector-im/riot-web</url>
+  </item>
+  <item name='kubernetes' issues='1991'>
+    <description>Production-Grade Container Scheduling and Management</description>
+    <path>kubernetes/kubernetes</path>
+    <url>https://github.com/kubernetes/kubernetes</url>
+  </item>
+  <item name='julia' issues='1952'>
+    <description>The Julia Language: A fresh approach to technical computing.</description>
+    <path>julialang/julia</path>
+    <url>https://github.com/julialang/julia</url>
+  </item>
+  <item name='docker' issues='1911'>
+    <description>Moby Project - a collaborative project for the container ecosystem to assemble container-based systems</description>
+    <path>dotcloud/docker</path>
+    <url>https://github.com/dotcloud/docker</url>
+  </item>
+  <item name='docker' issues='1911'>
+    <description>Moby Project - a collaborative project for the container ecosystem to assemble container-based systems</description>
+    <path>docker/docker</path>
+    <url>https://github.com/docker/docker</url>
+  </item>
+  <item name='angular' issues='1888'>
+    <description>One framework. Mobile & desktop.</description>
+    <path>angular/angular</path>
+    <url>https://github.com/angular/angular</url>
+  </item>
+  <item name='tensorflow' issues='1883'>
+    <description>Computation using data flow graphs for scalable machine learning</description>
+    <path>tensorflow/tensorflow</path>
+    <url>https://github.com/tensorflow/tensorflow</url>
+  </item>
+  <item name='sympy' issues='1829'>
+    <description>A computer algebra system written in pure Python</description>
+    <path>sympy/sympy</path>
+    <url>https://github.com/sympy/sympy</url>
+  </item>
+  <item name='pandas' issues='1817'>
+    <description>Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more</description>
+    <path>pandas-dev/pandas</path>
+    <url>https://github.com/pandas-dev/pandas</url>
+  </item>
+  <item name='pandas' issues='1816'>
+    <description>Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more</description>
+    <path>pydata/pandas</path>
+    <url>https://github.com/pydata/pandas</url>
+  </item>
+  <item name='nocode' issues='1793'>
+    <description>The best way to write secure and reliable applications. Write nothing; deploy nowhere.</description>
+    <path>kelseyhightower/nocode</path>
+    <url>https://github.com/kelseyhightower/nocode</url>
+  </item>
+  <item name='cockroach' issues='1773'>
+    <description>CockroachDB - the open source, cloud-native SQL database.</description>
+    <path>cockroachdb/cockroach</path>
+    <url>https://github.com/cockroachdb/cockroach</url>
+  </item>
+  <item name='terraform-provider-aws' issues='1759'>
+    <description>Terraform AWS provider</description>
+    <path>terraform-providers/terraform-provider-aws</path>
+    <url>https://github.com/terraform-providers/terraform-provider-aws</url>
+  </item>
+  <item name='servo' issues='1617'>
+    <description>The Servo Browser Engine</description>
+    <path>mozilla/servo</path>
+    <url>https://github.com/mozilla/servo</url>
+  </item>
+  <item name='servo' issues='1617'>
+    <description>The Servo Browser Engine</description>
+    <path>servo/servo</path>
+    <url>https://github.com/servo/servo</url>
+  </item>
+  <item name='keras' issues='1606'>
+    <description>Deep Learning for humans</description>
+    <path>keras-team/keras</path>
+    <url>https://github.com/keras-team/keras</url>
+  </item>
+  <item name='youtube-dl' issues='1582'>
+    <description>Command-line program to download videos from YouTube.com and other video sites</description>
+    <path>rg3/youtube-dl</path>
+    <url>https://github.com/rg3/youtube-dl</url>
+  </item>
+  <item name='youtube-dl' issues='1577'>
+    <description>Command-line program to download videos from YouTube.com and other video sites</description>
+    <path>ytdl-org/youtube-dl</path>
+    <url>https://github.com/ytdl-org/youtube-dl</url>
+  </item>
+  <item name='odoo' issues='1522'>
+    <description>Odoo. Open Source Apps To Grow Your Business.</description>
+    <path>odoo/odoo</path>
+    <url>https://github.com/odoo/odoo</url>
+  </item>
+  <item name='brackets' issues='1485'>
+    <description>An open source code editor for the web, written in JavaScript, HTML and CSS.</description>
+    <path>adobe/brackets</path>
+    <url>https://github.com/adobe/brackets</url>
+  </item>
+  <item name='elasticsearch' issues='1460'>
+    <description>Open Source, Distributed, RESTful Search Engine</description>
+    <path>elastic/elasticsearch</path>
+    <url>https://github.com/elastic/elasticsearch</url>
+  </item>
+  <item name='elasticsearch' issues='1453'>
+    <description>Open Source, Distributed, RESTful Search Engine</description>
+    <path>elasticsearch/elasticsearch</path>
+    <url>https://github.com/elasticsearch/elasticsearch</url>
+  </item>
+  <item name='proton' issues='1448'>
+    <description>Compatibility tool for Steam Play based on Wine and additional components</description>
+    <path>valvesoftware/proton</path>
+    <url>https://github.com/valvesoftware/proton</url>
+  </item>
+  <item name='gutenberg' issues='1442'>
+    <description>Printing since 1440. Development hub for the editor focus in core. Plugin is available from the official WordPress repository.</description>
+    <path>wordpress/gutenberg</path>
+    <url>https://github.com/wordpress/gutenberg</url>
+  </item>
+  <item name='grafana' issues='1435'>
+    <description>The tool for beautiful monitoring and metric analytics & dashboards for Graphite, InfluxDB & Prometheus & More</description>
+    <path>grafana/grafana</path>
+    <url>https://github.com/grafana/grafana</url>
+  </item>
+  <item name='powershell' issues='1415'>
+    <description>PowerShell for every system!</description>
+    <path>powershell/powershell</path>
+    <url>https://github.com/powershell/powershell</url>
+  </item>
+  <item name='server' issues='1389'>
+    <description>☁️ Nextcloud server, a safe home for all your data</description>
+    <path>nextcloud/server</path>
+    <url>https://github.com/nextcloud/server</url>
+  </item>
+  <item name='components' issues='1374'>
+    <description>Component infrastructure and Material Design components for Angular</description>
+    <path>angular/components</path>
+    <url>https://github.com/angular/components</url>
+  </item>
+  <item name='material2' issues='1372'>
+    <description>Material Design components for Angular</description>
+    <path>angular/material2</path>
+    <url>https://github.com/angular/material2</url>
+  </item>
+  <item name='spacemacs' issues='1371'>
+    <description>A community-driven Emacs distribution - The best editor is neither Emacs nor Vim, it's Emacs *and* Vim!</description>
+    <path>syl20bnr/spacemacs</path>
+    <url>https://github.com/syl20bnr/spacemacs</url>
+  </item>
+  <item name='scikit-learn' issues='1347'>
+    <description>scikit-learn: machine learning in Python</description>
+    <path>scikit-learn/scikit-learn</path>
+    <url>https://github.com/scikit-learn/scikit-learn</url>
+  </item>
+  <item name='csharplang' issues='1333'>
+    <description>The official repo for the design of the C# programming language</description>
+    <path>dotnet/csharplang</path>
+    <url>https://github.com/dotnet/csharplang</url>
+  </item>
+  <item name='brave-browser' issues='1327'>
+    <description>Next generation Brave browser for macOS, Windows, Linux, and eventually Android</description>
+    <path>brave/brave-browser</path>
+    <url>https://github.com/brave/brave-browser</url>
+  </item>
+  <item name='xamarin.forms' issues='1296'>
+    <description>Xamarin.Forms Official Home</description>
+    <path>xamarin/xamarin.forms</path>
+    <url>https://github.com/xamarin/xamarin.forms</url>
+  </item>
+</high>
+<medium>
+</medium>
+<low>
+</low>
+</repo>
