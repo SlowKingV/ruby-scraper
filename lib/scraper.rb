@@ -102,7 +102,7 @@ class ScrapXML < Scraper
   private
 
   def refresh
-    @nodes = fetch_nodes
+    fetch_nodes
     parse_nodes unless @nodes.empty?
   end
 

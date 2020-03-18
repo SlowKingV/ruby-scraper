@@ -71,13 +71,13 @@ until input.zero?
       file.puts(json)
     end
     puts 'New file selected!(Press [Enter] to continue)'
-    getsfiles
+    gets
   when 4
     print 'Enter the new file name: '
     name = gets.strip
     tags = ScrapHTML.tags
     tags[0] = 'All'
-    tags.each { |f| puts f }
+    tags.each_with_index { |f, i| puts "#{i} = #{f}" }
     tags[0] = ''
     print 'Enter the language to listen: '
     tag = gets.strip.to_i
@@ -86,9 +86,9 @@ until input.zero?
     remote[1] = ScrapHTML.new(remote[0].file)
     puts 'Creating local file...'
     local[0] = FileHandler.new(name)
-    local[1] = ScrapXML.new(local[0].file)
     local[0].file.rewind
     local[0].file.puts("<repo tag='#{remote[1].tag}'>\n#{ScrapXML.to_str(remote[1].dataset)}\n</repo>")
+    local[1] = ScrapXML.new(local[0].file)
     puts 'File generated...(Press [Enter] to continue)'
     gets
   when 0
