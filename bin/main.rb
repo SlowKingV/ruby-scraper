@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'json'
-require './lib/connection_handler.rb'
-require './lib/file_handler.rb'
-require './lib/scraper.rb'
+require_relative '../lib/connection_handler.rb'
+require_relative '../lib/file_handler.rb'
+require_relative '../lib/scraper.rb'
 
 ScrapHTML.refresh_tags(Connection.new.file)
 config = JSON.parse(File.read('repo/config.json'))
@@ -77,7 +77,7 @@ until input.zero?
     name = gets.strip
     tags = ScrapHTML.tags
     tags[0] = 'All'
-    tags.each_with_index { |f, i| puts "#{i} = #{f}" }
+    tags.each { |f| puts f }
     tags[0] = ''
     print 'Enter the language to listen: '
     tag = gets.strip.to_i
