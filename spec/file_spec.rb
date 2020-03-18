@@ -38,7 +38,7 @@ describe FileHandler do
       expect(File.exist?(obj.file_path)).to eql true
     end
 
-    it '#delete Class method still deletes current working file inside deffault directory' do
+    it '#delete Class method still deletes current working file inside default directory' do
       FileHandler.delete_file(obj.file_path)
       expect(File.exist?(obj.file_path)).not_to eql true
     end
