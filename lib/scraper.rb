@@ -27,6 +27,7 @@ class ScrapHTML < Scraper
 
   class << self
     attr_reader :tags
+
     def refresh_tags(src)
       doc = Nokogiri::HTML(src)
       doc.css('ul.types-filter > li > a').each { |node| @tags << node['data-language'] }
