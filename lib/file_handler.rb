@@ -24,5 +24,9 @@ class FileHandler
     def list_files
       @repo_dir.entries.select { |entry| entry =~ /\.xml$/ }
     end
+
+    def delete_file(path)
+      File.delete(path) if File.exist?(path)
+    end
   end
 end
