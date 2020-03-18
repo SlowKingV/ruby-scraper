@@ -3,7 +3,7 @@
 > Capstone projects are solo projects at the end of the each of the Microverse Main Technical Curriculum sections.
 
 **This is my ruby web scraper for Ruby Curse of Microverse.**
-One of the current problems I constantly have is searching for *Open Source* projects to contribute, that's why I created my web scraper to extract data from [CodeTriage](https://www.codetriage.com) which is a web page to search projects that need contribution. It will return all the entries from the first page of the specified language you are searching for (*All Languages* by default). The current version of this project can only be controlled trough the executable file `<main.rb>` inside `bin/`, however, the program retrieves and stores the data to different files managed by the user, so this can be easly implemented within bots or email services to notify about new entries.
+One of the current problems I constantly have is searching for *Open Source* projects to contribute, that's why I created my web scraper to extract data from [CodeTriage](https://www.codetriage.com) which is a web page to search projects that need contribution. It will return all the entries from the first page of the specified language you are searching for (*All Languages* by default). The current version of this project can only be controlled through the executable file `<main.rb>` inside `bin/`, however, the program retrieves and stores the data to different files managed by the user, so this can be easly implemented within bots or email services to notify about new entries.
 
 *And that might be the future of this project...*
 
